@@ -9,7 +9,7 @@ def transcribe(audio):
 
 iface = gr.Interface(
     fn=transcribe, 
-    inputs=gr.Audio(source="microphone", type="filepath"), 
+    inputs=gr.Audio(sources="microphone", type="filepath"), 
     outputs="text",
     title="Whisper Small Swedish",
     description="Realtime demo for Swedish speech recognition using a fine-tuned Whisper small model.",
